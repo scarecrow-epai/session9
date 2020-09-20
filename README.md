@@ -35,6 +35,16 @@ pytest -v
 
     Decorator to run a function n times where n is an integer.
 
+### pr_fac(level)
+
+
+    Decorator to run a with with differen access config.
+
+### my_func()
+
+
+    Generic function.
+
 ### add(a: int, b: int) -> int
 
 
@@ -95,4 +105,9 @@ The test definitions are as follows:
 
 
     Test to run a function n times. 
+
+### test_pr_fac()
+
+
+    Test to run function with different access levels.
 

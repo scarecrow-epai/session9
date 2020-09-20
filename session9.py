@@ -85,6 +85,33 @@ def timed_fac(reps: int) -> "fn":
     return timed
 
 
+def pr_fac(level):
+    """
+    Decorator to run a with with differen access config.
+    """
+
+    def privilige(fn):
+        from functools import wraps
+
+        access = {4: ["a", "b", "c", "d"], 3: ["a", "b", "c"], 2: ["a", "b"], 1: ["a"]}
+
+        @wraps(fn)
+        def inner(*args, **kwargs):
+            print("Access to - ")
+            return access[level]
+
+        return inner
+
+    return privilige
+
+
+def my_func():
+    """
+    Generic function.
+    """
+    return "Running function."
+
+
 def add(a: int, b: int) -> int:
     """
     Function to add 2 integers.

@@ -119,3 +119,15 @@ def test_timed_fac():
     """
 
     assert session9.timed_fac(5)(session9.add)(1, 2) == 3
+
+
+def test_pr_fac():
+    """
+    Test to run function with different access levels.
+    """
+    assert session9.pr_fac(4)(session9.my_func)() == [
+        "a",
+        "b",
+        "c",
+        "d",
+    ] and session9.pr_fac(2)(session9.my_func)() == ["a", "b"]
