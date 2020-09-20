@@ -30,15 +30,15 @@ pytest -v
 
     Decorator to log the datetime when a function is called.
 
-### timed_fac(reps:int) -> "fn"
+### timed_fac(reps: int) -> "fn"
 
 
     Decorator to run a function n times where n is an integer.
 
-### add(a, b)
+### add(a: int, b: int) -> int
 
 
-
+    Function to add 2 integers.
 
 
 ## Functions in `test_session9.py`.

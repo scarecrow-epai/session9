@@ -85,5 +85,8 @@ def timed_fac(reps: int) -> "fn":
     return timed
 
 
-def add(a, b):
+def add(a: int, b: int) -> int:
+    """
+    Function to add 2 integers.
+    """
     return a + b
